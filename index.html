@@ -9,15 +9,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
 <!-- ============ NAV ============ -->
+ <div class="main-body">
 <header class="site-header">
-  <a class="brand" href="#top" aria-label="Back to top">
+  <!-- <a class="brand" href="#top" aria-label="Back to top">
     <span class="brand-stamp">YN</span>
-  </a>
+  </a> -->
   <nav class="tab-nav" aria-label="Primary">
     <a href="#about" class="tab">About</a>
     <a href="#education" class="tab">Education</a>
@@ -29,36 +30,43 @@
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="top">
+<section class="record" class="hero" id="top">
   <div class="card hero-card">
     <div class="punch-holes"><span></span><span></span></div>
-    <p class="eyebrow">PERSONAL FILE · NO. 001</p>
-    <h1 class="hero-name">[Your Name]</h1>
-    <p class="hero-role">[Your Role / Field of Study] &nbsp;·&nbsp; [University or City]</p>
-    <p class="hero-tagline">[One or two sentences that capture who you are and what you care about — e.g. "Graduate student building resilient software systems, with a soft spot for well-indexed databases and terrible puns."]</p>
+    <p class="eyebrow">Hello,I am </p>
+    <h1 class="hero-name">Nirupama Ranjan</h1>
+    <p class="hero-role">Student, M.Tech (CSE)&nbsp;·&nbsp;IIIT Hyderabad</p>
+    <p class="hero-tagline">[One or two sentences that capture who you are and what you care about
+       — e.g. "Graduate student building resilient software systems, 
+      with a soft spot for well-indexed databases and terrible puns."]</p>
     <div class="hero-links">
       <a href="mailto:you@example.com">Email</a>
       <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
       <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
     </div>
-    <div class="stamp"><span>FILED</span><span id="filed-date" class="mono"></span></div>
+    <!-- <div class="stamp"><span>FILED</span><span id="filed-date" class="mono"></span></div> -->
   </div>
 </section>
 
 <!-- ============ ABOUT ============ -->
 <section class="record" id="about">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--brass)">REC · 01</span><h2>About</h2></div>
+  <div class="record-label">
+    <span class="record-tab" style="--tab-color:var(--brass)"></span><h2>About</h2>
+  </div>
   <div class="card">
     <div class="punch-holes"><span></span><span></span></div>
-    <p>[Write two or three short paragraphs about yourself: where you're from, what you studied or are studying, and what drives you. This is usually the first thing people read, so keep it in your own voice rather than a formal résumé tone.]</p>
+    <p>[Write two or three short paragraphs about yourself: where you're from,
+       what you studied or are studying, and what drives you. This is usually the 
+       first thing people read, so keep it in your own voice rather than a formal résumé tone.]</p>
     <p>[Optional: a line on what you're currently exploring or excited about — a class, a project, a piece of tech, a book.]</p>
   </div>
+  <div>Hello </div>
 </section>
 
 <!-- ============ EDUCATION ============ -->
 <section class="record" id="education">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--sage)">REC · 02</span><h2>Education</h2></div>
+  <div class="record-label"><span class="record-tab" style="--tab-color:var(--sage)"></span><h2>Education</h2></div>
   <div class="card ledger">
     <div class="punch-holes"><span></span><span></span></div>
 
@@ -85,8 +93,8 @@
 </section>
 
 <!-- ============ EXPERIENCE ============ -->
-<section class="record" id="experience">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--rose)">REC · 03</span><h2>Work Experience</h2></div>
+<section  class="record" id="experience">
+  <div class="record-label"><span class="record-tab" style="--tab-color:var(--rose)"></span><h2>Work Experience</h2></div>
   <div class="card">
     <div class="punch-holes"><span></span><span></span></div>
 
@@ -118,8 +126,8 @@
 </section>
 
 <!-- ============ INTERESTS ============ -->
-<section class="record" id="interests">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--brass)">REC · 04</span><h2>Interests &amp; Hobbies</h2></div>
+<section  class="record" id="interests">
+  <div class="record-label"><span class="record-tab" style="--tab-color:var(--brass)"></span><h2>Interests &amp; Hobbies</h2></div>
   <div class="card">
     <div class="punch-holes"><span></span><span></span></div>
     <ul class="tag-grid">
@@ -136,7 +144,7 @@
 
 <!-- ============ GALLERY ============ -->
 <section class="record" id="gallery">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--sage)">REC · 05</span><h2>Picture Gallery</h2></div>
+  <div class="record-label"><span class="record-tab" style="--tab-color:var(--sage)"></span><h2>Picture Gallery</h2></div>
   <div class="card gallery-card">
     <div class="punch-holes"><span></span><span></span></div>
     <div class="gallery-grid">
@@ -153,7 +161,7 @@
 
 <!-- ============ CONTACT ============ -->
 <section class="record" id="contact">
-  <div class="record-label"><span class="record-tab" style="--tab-color:var(--rose)">REC · 06</span><h2>Contact</h2></div>
+  <div class="record-label"><span class="record-tab" style="--tab-color:var(--rose)"></span><h2>Contact</h2></div>
   <div class="card">
     <div class="punch-holes"><span></span><span></span></div>
     <p>[A short closing line inviting people to reach out — e.g. "Always happy to talk about databases, distributed systems, or good hiking trails."]</p>
@@ -166,9 +174,9 @@
 </section>
 
 <footer class="site-footer">
-  <p>[Your Name] · Built with HTML &amp; CSS · <a href="#top">Back to top ↑</a></p>
+  <p>Nirupama Ranjan· Built with HTML &amp; CSS · <a href="#top">Back to top ↑</a></p>
 </footer>
+</div>
 
-<script src="script.js"></script>
 </body>
 </html>
