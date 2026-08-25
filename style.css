@@ -35,7 +35,7 @@ body {
     radial-gradient(ellipse at top, #1C2D4B 0%, var(--navy) 45%, var(--navy-deep) 100%);
   background-attachment: fixed;
   min-height: 100vh;
-  background-image: url('https://i.pinimg.com/736x/5b/5e/06/5b5e06bd2c4c40c0413f632f631cd202.jpg');
+  background-image: url('https://i.pinimg.com/1200x/6f/12/bd/6f12bd3e987161047b6d78bf0bfb3081.jpg');
    background-repeat: no-repeat;
    background-size: cover;
     background-position: center;
@@ -238,7 +238,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .record {
-  max-width: 900px;
+  max-width: 80%;
   margin: 56px auto;
   padding: 0 20px;
   opacity: 100;
