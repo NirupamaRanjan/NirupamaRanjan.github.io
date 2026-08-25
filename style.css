@@ -6,7 +6,7 @@
   --paper-line: #DCCFA8;
   --ink: #23283A;
   --muted: #6B6555;
-  --brass: #B8873B;
+  --brass: #B8873B;   
   --brass-light: #D9AE5D;
   --sage: #5C7A5E;
   --rose: #A2453E;
@@ -58,7 +58,6 @@ a:focus-visible, button:focus-visible {
   outline-offset: 3px;
 }
 
-/* ================= HEADER / TAB NAV =============== */
 .site-header {
   
   position: sticky;
@@ -119,7 +118,6 @@ a:focus-visible, button:focus-visible {
   color: var(--navy-deep);
 }
 
-/* ================= SHARED CARD ================= */
 .card {
   position: relative;
   background: var(--paper);
@@ -161,7 +159,7 @@ a:focus-visible, button:focus-visible {
   box-shadow: inset 0 2px 3px rgba(0,0,0,0.6);
 } */
 
-/* ================= HERO ================= */
+
 .hero {
   max-width: 760px;
   margin: 64px auto 20px;
@@ -207,6 +205,7 @@ a:focus-visible, button:focus-visible {
   flex-wrap: wrap;
   gap: 10px 18px;
   margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 .hero-links a {
@@ -238,7 +237,6 @@ a:focus-visible, button:focus-visible {
   opacity: 0.85;
 }
 
-/* ================= RECORD SECTIONS ================= */
 .record {
   max-width: 900px;
   margin: 56px auto;
@@ -280,7 +278,6 @@ a:focus-visible, button:focus-visible {
   margin: 0;
 }
 
-/* ================= LEDGER (EDUCATION) ================= */
 .ledger-row {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -302,7 +299,6 @@ a:focus-visible, button:focus-visible {
 
 .ledger-what p { margin: 4px 0; }
 
-/* ================= EXPERIENCE ================= */
 .exp-item + .exp-item {
   margin-top: 26px;
   padding-top: 22px;
@@ -329,7 +325,6 @@ a:focus-visible, button:focus-visible {
 .card li { margin-bottom: 4px; }
 .card ul:not(.tag-grid) li::marker { color: var(--brass); }
 
-/* ================= INTERESTS ================= */
 .tag-grid {
   list-style: none;
   display: flex;
@@ -348,13 +343,14 @@ a:focus-visible, button:focus-visible {
   border-radius: 20px;
 }
 
-/* ================= GALLERY ================= */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-bottom: 18px;
 }
+
 
 .gallery-tile {
   margin: 0;
@@ -395,7 +391,6 @@ a:focus-visible, button:focus-visible {
   border-radius: 3px;
 }
 
-/* ================= FOOTER ================= */
 .site-footer {
   text-align: center;
   padding: 40px 20px 60px;
@@ -410,7 +405,6 @@ a:focus-visible, button:focus-visible {
   text-decoration: none;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 620px) {
   .card { padding: 26px 22px 26px 46px; }
   .hero-card { padding: 34px 24px 30px 46px; }
@@ -419,7 +413,6 @@ a:focus-visible, button:focus-visible {
   .site-header { padding: 12px 16px; }
 }
 
-/* ================= REDUCED MOTION ================= */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .record, .hero-card, .gallery-tile, .tab {

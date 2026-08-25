@@ -1,0 +1,211 @@
+
+:root {
+  --cream: #F6EFDF;        /* page background */
+  --cream-card: #FFFBF3;   /* card background — lighter cream, sits above page bg */
+  --ink: #16233B;          /* deep navy text — high contrast on cream */
+  --navy: #1B3A6B;         /* primary blue — headings, links, borders */
+  --navy-deep: #0F2544;    /* darkest navy — table headers, nav pill hover */
+  --blue: #2F6FB0;         /* mid blue — hover states, secondary accents */
+  --gold: #C9962B;         /* warm accent — used sparingly for hover highlights */
+  --muted: #5B6B82;        /* muted navy-gray — secondary text */
+  --line: #DCCFA8;         /* soft divider tone between cream and navy */
+  --radius: 12px;
+  --shadow: 0 10px 26px rgba(15, 35, 68, 0.14);
+}
+
+
+body {
+  /* background: var(--cream) !important; */
+  /* color: var(--ink) !important; */
+  padding: 28px 14px 60px;
+  line-height: 1.65;
+  background-image: url('https://i.pinimg.com/736x/1a/65/60/1a656043c6a0c7f2056ef3d9fae9b146.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--navy-deep), var(--blue));
+  z-index: 100;
+  
+}
+
+
+h1#home {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+  color: var(--navy-deep);
+}
+
+h1#home::before {
+  content: "🎓 ";
+}
+
+h3 {
+  font-weight: 500;
+  color: var(--muted);
+  margin: 2px 0;
+}
+
+
+b[id] {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--navy-deep);
+  border-bottom: 3px solid var(--gold);
+  padding: 2px 4px 4px 0;
+  margin-top: 6px;
+  scroll-margin-top: 18px;
+}
+
+
+a[href^="#"] {
+  display: inline-block;
+  text-decoration: none !important;
+  color: var(--navy-deep) !important;
+  background: #E4EEF9;
+  border: 1px solid #C9DCF0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a[href^="#"]:hover {
+  background: var(--navy-deep);
+  border-color: var(--navy-deep);
+  color: #FFFBF3 !important;
+}
+
+
+a[href^="http"], a[href^="mailto"] {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a[href^="http"]:hover, a[href^="mailto"]:hover {
+  color: var(--gold);
+}
+
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+  margin: 18px 0;
+}
+
+table[width="100%"],
+table[border="0"] {
+  width: min(880px, 94vw) !important;
+  margin: 0 auto 24px auto !important;
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-spacing: 0 !important;
+}
+
+table[width="100%"] td,
+table[border="0"] td {
+  padding: 22px 30px;
+}
+
+table[border="0"][width="10%"] td {
+  padding: 10px 28px;
+}
+
+table[border="1"] {
+  width: min(880px, 94vw) !important;
+  margin: 0 auto 24px auto !important;
+  border-collapse: collapse !important;
+  border: 1px solid var(--line) !important;
+  background: var(--cream-card);
+  box-shadow: var(--shadow);
+  font-size: 0.95rem;
+}
+
+table[border="1"] th {
+  background: var(--navy-deep);
+  color: #FFFBF3 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+  padding: 12px 10px;
+  border: none !important;
+}
+
+table[border="1"] td {
+  padding: 10px;
+  border: none !important;
+  border-bottom: 1px solid var(--line);
+}
+
+table[border="1"] tr:nth-of-type(even) td {
+  background: #ECE3CB;
+}
+
+table[border="1"] tr:hover td {
+  background: #E4EEF9;
+}
+
+table[border="1"] td[colspan] {
+  background: transparent;
+  border-bottom: none;
+  padding-top: 16px;
+}
+
+font[size="3"] {
+  font-size: 1rem !important;
+  color: var(--ink);
+}
+
+font[size="2"] {
+  font-size: 0.85rem !important;
+  color: var(--muted);
+}
+
+
+#txt {
+  display: inline-block;
+  font-family: ui-monospace, "SFMono-Regular", monospace;
+  font-size: 0.85rem;
+  color: var(--navy);
+  background: #E4EEF9;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+
+ul, ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+::selection {
+  background: var(--gold);
+  color: #FFFBF3;
+}
+
+
+@media (max-width: 640px) {
+  table[width="100%"] td,
+  table[border="0"] td {
+    padding: 16px 18px;
+  }
+  h1#home { font-size: 1.4rem; }
+  b[id] { font-size: 1.1rem; }
+}
